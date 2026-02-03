@@ -354,6 +354,19 @@ body {
   transform: translateY(-3px);
 }
 
+/* Disabled state for social links */
+.social-link.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.social-link.disabled:hover {
+  /* Ensure hover doesn't apply visual effects */
+  transform: none;
+  background: rgba(255,255,255,0.05);
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.05);
   padding: 25px 0;
